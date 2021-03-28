@@ -67,9 +67,9 @@ N/A
     </div>
     
         <div id="content" class="w3-container">
-        <p>Does the odometer read below 100000 miles?</p>                                                         
-        <a href="#two"  onclick="copAdd();" class="w3-btn w3-black"> Yes</a>                      
-        <a href="#two" onclick="dropAdd();" class="w3-button w3-black">No</a>                         
+        <p>Does the odometer read above or below 100000 miles?</p>                                                         
+        <a href="#two"  onclick="dropAdd();" class="w3-btn w3-black">Above</a>                      
+        <a href="#two" onclick="copAdd();" class="w3-button w3-black">Below</a>                         
         </div>
 </div>
 
@@ -172,9 +172,7 @@ N/A
 
     function results(){                    //Called when user presses 'show results'
         var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
-        resultText.innerHTML = "Cop? = " + 
-        (100.0*cop_count/6.0).toString() +  "Drop? = " + 
-	(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
+        resultText.innerHTML = "Cop? = " +(100.0*cop_count/6.0).toString() + "Drop? = " +(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
     }
 </script>
 </html>
