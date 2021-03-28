@@ -49,7 +49,7 @@ N/A
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-    <h1>SHOULD YOU BUY THIS USED CAR?</h1>
+    <h1>Should you buy this used car?</h1>
 </div>
     
 <div id="content" class="w3-container">
@@ -173,7 +173,8 @@ N/A
     function results(){                    //Called when user presses 'show results'
         var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
         resultText.innerHTML = "Cop? = " + 
-        (100.0*cop_count/6.0).toString() + "Drop? = " + (100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
+        (100.0*cop_count/6.0).toString() +  "Drop? = " + 
+	(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
     }
 </script>
 </html>
