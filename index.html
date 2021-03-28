@@ -1,31 +1,182 @@
 <!DOCTYPE html> 
 <html> 
-<!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
+<!-- The following code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
-THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
+THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
- 
-Further Information:
-http://diystream.cns.utexas.edu/
+Anish Maddipoti
 
-Research Educator:
-Timothy Riedel
-triedel@utexas.edu
- 
 Brief Description of Goal of Code:
-blah, blah, blah,
+To be used to determine whether to buy a used car or not.
  
 Known Issues:
-blah, blah, blah, blah
--->
+N/A
+-->3
 
    <head> 
       
-	   PUT YOUR OLD CODE IN HERE
+	   <head> 
+      <title>Should you buy this pre-owned car?</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
+   </head> 
+
+<style> 
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+</style>
+
+<body>
+<div id="header" class="w3-container w3-flat-carrot">
+    <h1>SHOULD YOU BUY THIS USED CAR?</h1>
+</div>
+    
+<div id="content" class="w3-container">
+    <p>Are you stuck deciding whether to buy a preowned car or not? Answer a few short questions to find out if you should!</p>
+    
+    <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+    
+    <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+    
+    <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+
+<div class="page" id="one">                                                                           
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 1</h1>                                                                           
+    </div>
+    
+        <div id="content" class="w3-container">
+        <p>Does the odometer read below 100000 miles?</p>                                                         
+        <a href="#two"  onclick="copAdd();" class="w3-btn w3-black"> Yes</a>                      
+        <a href="#two" onclick="dropAdd();" class="w3-button w3-black">No</a>                         
+        </div>
+</div>
+
+<div class="page" id="two">                                                                           
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 2</h1>                                                                           
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Are there any visible scratches or damages to the car?</p>                                                                   
+        <a href="#three"  onclick="dropAdd();" class="w3-button w3-black">Yes</a>                       
+        <a href="#three" onclick="copAdd();" class="w3-button w3-black">No</a>                    
+    </div>
+</div>  
+
+<div class="page" id="three">                                                                         
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 3</h1>                                                                           
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Is the gas mileage above or below industry standards?</p>                                                             
+        <a href="#four" onclick="copAdd();" class="w3-button w3-black">Above</a>                       
+        <a href="#four" onclick="dropAdd();" class="w3-button w3-black">Below</a>                     
+    </div>
+</div>
+
+<div class="page" id="four">                                                                          
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 4</h1>                                                                           
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Are there any incident reports for the vehicle on www.carfax.com?</p>                                                 
+        <a href="#five" onclick="copAdd();" class="w3-button w3-black">Yes</a>               
+        <a href="#five" onclick="dropAdd();" class="w3-button w3-black">No</a>                   
+    </div>
+</div>
+
+<div class="page" id="five">                                                                          
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 5</h1>                                                                           
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Did you test drive the car? Were there any noticeable issues when driving the car?</p>                                                 
+        <a href="#six" onclick="dropAdd();" class="w3-button w3-black">Yes</a>               
+        <a href="#six" onclick="copAdd();" class="w3-button w3-black">No</a>                   
+    </div>
+</div>
+	
+<div class="page" id="six">                                                                          
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Question 6</h1>                                                                           
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Check for other sellers of this exact car and model. Is the price you're paying less or greater than the average prices you see online?</p>                                                 
+        <a href="#seven" onclick="copAdd();" class="w3-button w3-black">Less than</a>               
+        <a href="#seven" onclick="dropAdd();" class="w3-button w3-black">Greater than</a>                   
+    </div>
+</div>
+	
+<div class="page" id="seven">
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Results</h1>
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p>Get results?</p>                                                                           
+        <a href="#results" onclick="results();" class="w3-button w3-black">Yes</a> 
+    </div>
+</div>
+
+<div class="page" id="results">                                                                        
+    <div id="header" class="w3-container w3-flat-carrot">
+        <h1>Results</h1>                                                                              
+    </div>
+    
+    <div id="content" class="w3-container">
+        <p id="ret">the results are</p>
+    </div>
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>ANISH MADDIPOTI</p>
+</footer>
+
+</body>
+<script>
+    var cop_count = 0;                 //Keeps track of the number of cop related responses
+    var drop_count = 0;                    //Keeps track of the number of drop related responses
+
+    function copAdd(){
+        cop_count = cop_count + 1; //Increments the cop_count when questions are answered yes
+    }
+
+    function dropAdd(){
+        drop_count = drop_count + 1; //Increments the drop_count when questions are answered no
+    }
+
+    function results(){                    //Called when user presses 'show results'
+        var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
+        resultText.innerHTML = "Cop? = " + 
+        (100.0*cop_count/6.0).toString() + "Drop? = " + (100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
+    }
+</script>
+</html>
 	   
    </body>
 </html>
