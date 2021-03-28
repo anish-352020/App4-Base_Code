@@ -146,7 +146,7 @@ N/A
 
 <div class="page" id="results">                                                                        
     <div id="header" class="w3-container w3-flat-carrot">
-        <h1>Results</h1>                                                                              
+        <h1>Results: Cop or Drop?</h1>                                                                              
     </div>
     
     <div id="content" class="w3-container">
@@ -170,7 +170,7 @@ N/A
         drop_count = drop_count + 1; //Increments the drop_count when questions are answered no
     }
 
-    function results(){                    //Called when user presses 'show results'
+    function results(){                    //Called when user presses the button'show results'
         var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
         resultText.innerHTML = "Cop? = " +(100.0*cop_count/6.0).toString() + "Drop? = " +(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
     }
