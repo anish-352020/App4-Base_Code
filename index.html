@@ -60,14 +60,16 @@ img, object{
 </div>
     
 <div id="content" class="w3-container">
-	<p>Are you stuck deciding whether to buy a pre-owned car or not? </p>
+	<h2>Are you stuck deciding whether to buy a pre-owned car or not? </h2>
 	
-	<p>Answer a few short questions to help with your decision!</p>
+	<h3>Answer a few short questions to help with your decision!</h3>
     
    <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<p></p>
+	<p></p>
  </div>   
 	
-<div id="footer" class="w3-panel w3-border w3-border-red">
+<div id="footer" class="w3-bottom w3-panel w3-border w3-border-red">
     <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
     <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
 </div>
@@ -226,7 +228,7 @@ img, object{
 
     function results(){                    //Called when user presses the button'show results'
         var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
-        resultText.innerHTML = "Cop? = " +(100.0*cop_count/6.0).toString() + "Drop? = " +(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
+        resultText.innerHTML = "<strong>Cop?</strong> = " +(100.0*cop_count/6.0).toString() + "<br/>" + "<strong>Drop?<strong> = " +(100.0*drop_count/6.0).toString(); //Calculates cop and drop precentages and appends them to a string
     }
 </script>
 </html>
