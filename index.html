@@ -9,7 +9,8 @@ Authors in chronological order of contribution:
 Anish Maddipoti
 
 Brief Description of Goal of Code:
-To be used to determine whether to buy a used car or not.
+To help a user determine whether to buy a pre-owned car or not based on criteria such as miles driven, mileage, visible damage, incident history, and price.
+
  
 Known Issues:
 N/A
@@ -18,7 +19,7 @@ N/A
    <head> 
       
 	   <head> 
-      <title>Should you buy this pre-owned car?</title>
+      <title>Cop or Drop?</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -41,36 +42,52 @@ N/A
     background-color: hsl(0,0%,100%);
 }
 
-  .page:target {
+.page:target {
     left: 0vw;
     z-index: 1;
+}	
+	
+img, object{
+    max-height:90%;
+    max-width:90%;
 }
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-flat-carrot w3-center">
     <h1>Should you buy this used car?</h1>
+		<img src="YesOrNo1.jpg">
 </div>
     
 <div id="content" class="w3-container">
-    <p>Are you stuck deciding whether to buy a preowned car or not? Answer a few short questions to find out if you should!</p>
+	<p>Are you stuck deciding whether to buy a pre-owned car or not? </p>
+	
+	<p>Answer a few short questions to help with your decision!</p>
     
-    <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
-    
+   <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+ </div>   
+	
+<div id="footer" class="w3-panel w3-border w3-border-red">
     <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
-    
     <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
-
+</div>
+	
 <div class="page" id="one">                                                                           
     <div id="header" class="w3-container w3-flat-carrot">
         <h1>Question 1</h1>                                                                           
-    </div>
+		</div>
     
-        <div id="content" class="w3-container">
-        <p>Does the odometer read above or below 100000 miles?</p>                                                         
-        <a href="#two"  onclick="dropAdd();" class="w3-btn w3-black">Above</a>                      
-        <a href="#two" onclick="copAdd();" class="w3-button w3-black">Below</a>                         
-        </div>
+		<div id="content" class="w3-container">
+				 <p>Does the odometer read above or below 100000 miles?</p>                                                         
+				 <a href="#two"  onclick="dropAdd();" class="w3-btn w3-black">Above</a>                      
+				 <a href="#two" onclick="copAdd();" class="w3-button w3-black">Below</a>                         
+ 		</div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>
 
 <div class="page" id="two">                                                                           
@@ -83,6 +100,12 @@ N/A
         <a href="#three"  onclick="dropAdd();" class="w3-button w3-black">Yes</a>                       
         <a href="#three" onclick="copAdd();" class="w3-button w3-black">No</a>                    
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>  
 
 <div class="page" id="three">                                                                         
@@ -95,6 +118,12 @@ N/A
         <a href="#four" onclick="copAdd();" class="w3-button w3-black">Above</a>                       
         <a href="#four" onclick="dropAdd();" class="w3-button w3-black">Below</a>                     
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>
 
 <div class="page" id="four">                                                                          
@@ -107,6 +136,12 @@ N/A
         <a href="#five" onclick="dropAdd();" class="w3-button w3-black">Yes</a>               
         <a href="#five" onclick="copAdd();" class="w3-button w3-black">No</a>                   
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>
 
 <div class="page" id="five">                                                                          
@@ -119,6 +154,12 @@ N/A
         <a href="#six" onclick="dropAdd();" class="w3-button w3-black">Yes</a>               
         <a href="#six" onclick="copAdd();" class="w3-button w3-black">No</a>                   
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>
 	
 <div class="page" id="six">                                                                          
@@ -131,6 +172,12 @@ N/A
         <a href="#seven" onclick="copAdd();" class="w3-button w3-black">Less than</a>               
         <a href="#seven" onclick="dropAdd();" class="w3-button w3-black">Greater than</a>                   
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
 </div>
 	
 <div class="page" id="seven">
@@ -152,6 +199,13 @@ N/A
     <div id="content" class="w3-container">
         <p id="ret">the results are</p>
     </div>
+	
+		<div id="footer" class="w3-panel w3-border w3-border-red">
+   			 <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+				 <p>THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
+		</div>
+	
+</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>ANISH MADDIPOTI</p>
@@ -176,6 +230,4 @@ N/A
     }
 </script>
 </html>
-	   
-   </body>
-</html>
+
