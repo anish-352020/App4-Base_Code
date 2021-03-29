@@ -67,7 +67,7 @@ img, object{
  </div>   
 	
 <div id="footer" class="w3-panel w3-border w3-border-red">
-    <p>The following code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.<br>
+    <p>This code has been developed for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.<br>
     THIS CODE AND ITS RESULTS SHOULD NOT BE USED AS THE SOLE REASON FOR BUYING A CAR.</p>
 </div>
 	
@@ -151,12 +151,12 @@ img, object{
 	
 <div class="page" id="seven">
     <div id="header" class="w3-container w3-flat-carrot">
-        <h1>Results: Cop or Drop?</h1>
+      <h1>Results: Cop or Drop?</h1>
     </div>
     
     <div id="content" class="w3-container">
 	    <h3>Get results?</h3>                                                               
-        <a href="#results" onclick="results();" class="w3-button w3-black">Yes</a> 
+      <a href="#results" onclick="results();" class="w3-button w3-black">Yes</a> 
     </div>
 </div>
 
@@ -188,7 +188,7 @@ img, object{
         drop_count = drop_count + 1; //Increments the drop_count when questions are answered no
     }
 
-    function results(){                    //Called when user presses the button'show results'
+    function results(){                    //Called when user presses the button to get results
         var resultText = document.getElementById("ret"); //Locates element called 'ret' to display results
         resultText.innerHTML = "<strong>Cop?</strong> = " + (100.0*cop_count/6.0).toString() + "%" + "<br/>" + "<strong>Drop?</strong> = " + (100.0*drop_count/6.0).toString()+ "%"; //Calculates cop and drop percentages and appends them to a string
     }
